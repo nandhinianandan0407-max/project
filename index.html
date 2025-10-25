@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahi's Animated Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Mahi<span>Dev</span></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <section id="home" class="home">
+    <div class="overlay"></div>
+    <div class="home-content">
+      <h2 class="glow">Hi, I'm <span>Mahi</span></h2>
+      <h3 class="typing">I'm a <span id="typed"></span></h3>
+      <p>Crafting beautiful and high-performance web experiences.</p>
+      <div class="buttons">
+        <button onclick="scrollToSection('projects')">My Work</button>
+        <button onclick="scrollToSection('contact')" class="outline">Hire Me</button>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="GitHub"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I’m an enthusiastic front-end developer with a passion for creating elegant and interactive web designs.
+      I love blending creativity with code to bring ideas to life. ✨
+    </p>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skill">
+      <span>HTML</span><div class="bar"><div class="fill" style="width:95%"></div></div>
+    </div>
+    <div class="skill">
+      <span>CSS</span><div class="bar"><div class="fill" style="width:90%"></div></div>
+    </div>
+    <div class="skill">
+      <span>JavaScript</span><div class="bar"><div class="fill" style="width:85%"></div></div>
+    </div>
+    <div class="skill">
+      <span>React</span><div class="bar"><div class="fill" style="width:80%"></div></div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="fade-in">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>💻 Portfolio Website</h3>
+        <p>My responsive, animated personal website built with HTML, CSS & JS.</p>
+      </div>
+      <div class="project-card">
+        <h3>🧾 To-Do App</h3>
+        <p>Stylish app to manage daily tasks with animations and local storage.</p>
+      </div>
+      <div class="project-card">
+        <h3>🌦️ Weather App</h3>
+        <p>Displays live weather info with animated UI using weather API.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Mahi | Designed with ❤️ & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
